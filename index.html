@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="azul">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0xMaximoJuan | Minecraft & Discord Developer</title>
+  <meta name="description" content="Portafolio de MaximoJuan — desarrollador y configurador de servidores de Minecraft con más de 2 años de experiencia. Plugins Java, bots de Discord y sistemas de progresión.">
+  <meta name="theme-color" content="#070b16">
+  <meta property="og:title" content="0xMaximoJuan | Minecraft & Discord Developer">
+  <meta property="og:description" content="Desarrollador y configurador de servidores de Minecraft. Plugins, bots y modalidades completas.">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="img/logo.png" alt="" width="32" height="32">
+        <span>&lt;0xMaximoJuan/&gt;</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#inicio"><i>01</i>Inicio</a></li>
+          <li><a href="#sobre-mi"><i>02</i>Sobre Mí</a></li>
+          <li><a href="#trayectoria"><i>03</i>Trayectoria</a></li>
+          <li><a href="#proyectos"><i>04</i>Proyectos</a></li>
+          <li><a href="#tecnologias"><i>05</i>Tecnologías</a></li>
+          <li><a href="#resenas"><i>06</i>Reseñas</a></li>
+          <li><a href="#contacto" class="btn btn--sm">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav__tools">
+        <div class="themes" role="group" aria-label="Color del tema">
+          <button class="dot" data-t="azul" aria-label="Tema azul" style="--c:#2f8bff"></button>
+          <button class="dot" data-t="verde" aria-label="Tema verde" style="--c:#22d38a"></button>
+          <button class="dot" data-t="rojo" aria-label="Tema rojo" style="--c:#ff4757"></button>
+          <button class="dot" data-t="violeta" aria-label="Tema violeta" style="--c:#a45cff"></button>
+        </div>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="status"><span class="pulse"></span>Disponible para nuevos proyectos</p>
+          <h1>Soy <span class="grad">MaximoJuan</span>,<br>desarrollador y configurador de <span class="type" id="typed" aria-live="polite">servidores</span><span class="caret" aria-hidden="true"></span></h1>
+          <p class="lead">Con más de <strong>2+ años de experiencia</strong> dentro de Minecraft. Aquí podrás conocer más sobre mí, explorar mis proyectos, mi trayectoria en los servidores y descubrir mi experiencia dentro del entorno de Minecraft.</p>
+          <div class="cta">
+            <a class="btn" href="#proyectos">Ver proyectos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="#contacto">Hablemos</a>
+          </div>
+          <dl class="stats">
+            <div><dt>Años de experiencia</dt><dd><span data-count="2">0</span>+</dd></div>
+            <div><dt>Servidores en mi trayectoria</dt><dd><span data-count="6">0</span></dd></div>
+            <div><dt>Código propio</dt><dd><span data-count="100">0</span>%</dd></div>
+          </dl>
+        </div>
+
+        <div class="term" aria-label="Terminal decorativa">
+          <div class="term__bar"><i></i><i></i><i></i><span>0xmaximojuan@network: ~</span></div>
+          <pre class="term__body" id="term"><code></code></pre>
+        </div>
+      </div>
+      <a href="#sobre-mi" class="scroll" aria-label="Bajar a Sobre Mí"><span></span></a>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="sec" id="sobre-mi">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">02 — Sobre Mí</p>
+          <h2>Quien configura tu network/modalidad</h2>
+        </header>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>Hola, soy <strong>MaximoJuan</strong>, un apasionado del mundo de Minecraft y la gestión de servidores. Cuento con más de 2 años de experiencia en el desarrollo y configuración de modalidades, creación de sistemas de juego y administración de proyectos relacionados con servidores.</p>
+            <p>Me especializo en la planificación, configuración y desarrollo completo de modalidades, llevando adelante gran parte del trabajo de forma autónoma. Además, tengo facilidad para trabajar en equipo, organizar proyectos, resolver problemas y aportar ideas creativas para mejorar la experiencia de los jugadores.</p>
+            <p>Me considero una persona responsable, comprometida, comunicativa y con una gran pasión por lo que hago. Siempre busco aprender nuevas herramientas y perfeccionar mis conocimientos para ofrecer resultados de calidad.</p>
+          </div>
+          <ul class="values">
+            <li class="card reveal">
+              <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+              <h3>Desarrollo de modalidades</h3>
+              <p>Planificación, configuración y desarrollo completo, de principio a fin y de forma autónoma.</p>
+            </li>
+            <li class="card reveal">
+              <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <h3>Responsable y comprometido</h3>
+              <p>Comunicación constante y entregas ordenadas, con foco en resultados de calidad.</p>
+            </li>
+            <li class="card reveal">
+              <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9.5" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.5c2.8.1 5 2.3 5 5"/></svg></span>
+              <h3>Trabajo en equipo</h3>
+              <p>Organizo proyectos, resuelvo problemas y aporto ideas para mejorar la experiencia de los jugadores.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA -->
+    <section class="sec sec--alt" id="trayectoria">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">03 — Trayectoria</p>
+          <h2>Servidores donde he trabajado</h2>
+          <p class="sub">Networks y proyectos en los que he aportado como desarrollador y configurador.</p>
+        </header>
+
+        <ul class="logos">
+          <!-- Para cambiar nombres o textos, edita estos <li>. -->
+          <li class="logo reveal" tabindex="0">
+            <div class="logo__img"><img src="img/candy.png" alt="Logo de CandyMC" loading="lazy" width="256" height="256"></div>
+            <h3>CandyMC Network</h3>
+            <p>Developer &amp; Configurador</p>
+          </li>
+          <li class="logo reveal" tabindex="0">
+            <div class="logo__img"><img src="img/phoenix.png" alt="Logo de servidor con escudo y fénix" loading="lazy" width="256" height="256"></div>
+            <h3>Fenixen Network</h3>
+            <p>Developer &amp; Configurador</p>
+          </li>
+          <li class="logo reveal" tabindex="0">
+            <div class="logo__img"><img src="img/pandamc.png" alt="Logo de PandaMC" loading="lazy" width="256" height="256"></div>
+            <h3>PandaMC Network</h3>
+            <p>Developer &amp; Configurador</p>
+          </li>
+          <li class="logo reveal" tabindex="0">
+            <div class="logo__img logo__img--fill"><img src="img/nightbox.png" alt="Logo de NightBox" loading="lazy" width="739" height="415"></div>
+            <h3>NightBox Network</h3>
+            <p>Developer &amp; Configurador</p>
+          </li>
+          <li class="logo reveal" tabindex="0">
+            <div class="logo__img"><img src="img/mineninja.png" alt="Logo de MineNinja" loading="lazy" width="500" height="500"></div>
+            <h3>MineNinja Network</h3>
+            <p>Developer &amp; Configurador</p>
+          </li>
+          <li class="logo reveal" tabindex="0">
+            <div class="logo__img logo__img--fill"><img src="img/azul.png" alt="Logo azul pixelado de servidor" loading="lazy" width="256" height="256"></div>
+            <h3>OjoLatam Network</h3>
+            <p>Developer &amp; Configurador</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="sec" id="proyectos">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">04 — Proyectos</p>
+          <h2>Lo que he construido</h2>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar proyectos">
+          <button class="chip is-on" data-f="all" aria-pressed="true">Todos</button>
+          <button class="chip" data-f="mc" aria-pressed="false">Minecraft</button>
+          <button class="chip" data-f="dc" aria-pressed="false">Discord</button>
+        </div>
+
+        <div class="projects" id="projects">
+          <article class="proj card reveal" data-k="mc">
+            <header><span class="tag">Java · Spigot/Paper</span><span class="tag tag--live">En desarrollo</span></header>
+            <h3>NjPractice</h3>
+            <p>Plugin de práctica/PvP: gestión de duelos, colas, kits configurables y estadísticas de jugadores. Pensado para escalar en networks con mucho tráfico.</p>
+            <ul class="stack"><li>Java</li><li>Spigot/Paper API</li><li>YAML</li></ul>
+          </article>
+          <article class="proj card reveal" data-k="mc">
+            <header><span class="tag">Java · Spigot/Paper</span></header>
+            <h3>Configuraciones Unicas</h3>
+            <p>Configuraciones personalizadas para diferentes aspectos del servidor, incluyendo economía, comandos y mecanismos del juego.</p>
+            <ul class="stack"><li>Java</li><li>Economía</li><li>YAML</li></ul>
+          </article>
+          <article class="proj card reveal" data-k="dc">
+            <header><span class="tag tag--dc">Discord Bot</span></header>
+            <h3>Bot Profesional — Tipo 1</h3>
+            <p>Gestión de network: paneles de tickets, verificación de miembros y automatización de roles, pensado para equipos de staff grandes.</p>
+            <ul class="stack"><li>Discord.js</li><li>Base de datos</li><li>Panel admin</li></ul>
+          </article>
+          <article class="proj card reveal" data-k="dc">
+            <header><span class="tag tag--dc">Discord Bot</span></header>
+            <h3>Bot Profesional — Tipo 2</h3>
+            <p>Orientado a la comunidad: niveles/XP, estadísticas del servidor y anuncios automáticos sincronizados con el estado del network.</p>
+            <ul class="stack"><li>Discord.js</li><li>Node.js</li><li>Automatización</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="sec sec--alt" id="tecnologias">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">05 — Tecnologías</p>
+          <h2>Mi stack</h2>
+        </header>
+        <div class="tech">
+          <div class="card reveal"><h3>Minecraft</h3><ul class="pills"><li>Java</li><li>Spigot API</li><li>Paper API</li><li>YAML</li></ul></div>
+          <div class="card reveal"><h3>Discord</h3><ul class="pills"><li>Discord.js</li><li>Python</li><li>Node.js</li><li>Slash Commands</li></ul></div>
+          <div class="card reveal"><h3>Datos y herramientas</h3><ul class="pills"><li>MySQL</li><li>SQLite</li><li>Git / GitHub</li><li>VS Code</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="sec" id="resenas">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">06 — Reseñas</p>
+          <h2>Lo que dicen de mi trabajo</h2>
+        </header>
+        <div class="reviews">
+          <figure class="card quote reveal">
+            <blockquote>“Aunque tiene un horario complicado hizo un gran trabajo y esfuerzo durante la vida del server, es una gran persona en la cual puedes confiar”</blockquote>
+            <figcaption><span class="av">BA</span><span><strong>Balta</strong><small>Owner — OjoLatam</small></span></figcaption>
+          </figure>
+          <figure class="card quote reveal">
+            <blockquote>“Mi experiencia trabajando con Juan ha sido sin duda bastante buena, siempre aporta buenas ideas, propone soluciones a ocasiones complejas y siempre esta a disposicion para cualquier duda sobre los proyectos que lleva a cabo, lo recomiendo bastante”</blockquote>
+            <figcaption><span class="av">BY</span><span><strong>Talavera</strong><small>Owner — Fenixen Network</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="sec sec--cta" id="contacto">
+      <div class="wrap">
+        <div class="cta-box reveal">
+          <img src="img/logo.png" alt="" width="64" height="64">
+          <h2>¿Tienes un proyecto en mente?</h2>
+          <p>Escríbeme y hablamos sobre tu plugin, bot, modalidad o sistema de progresión.</p>
+          <div class="contact">
+            <button class="copy" data-copy="theduojd75@gmail.com" aria-label="Copiar email">
+              <small>Email</small><span>theduojd75@gmail.com</span><em>Copiar</em>
+            </button>
+            <button class="copy" data-copy="themaximojuan" aria-label="Copiar usuario de Discord">
+              <small>Discord</small><span>themaximojuan</span><em>Copiar</em>
+            </button>
+          </div>
+          <a class="btn" href="mailto:theduojd75@gmail.com">Enviar correo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span>© 2026 0xMaximoJuan — Portfolio Minecraft &amp; Discord Developer</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
